@@ -2,12 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 function Button(props) {
-    const {
-        outline,
-        children,
-        onClick,
-        className
-    } = props;
+    const { outline, children, onClick, className } = props;
 
     return (
         <button
@@ -19,8 +14,6 @@ function Button(props) {
             {children}
         </button>
     );
-
 }
-
 
 export default Button;

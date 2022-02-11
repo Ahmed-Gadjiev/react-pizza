@@ -1,30 +1,23 @@
 import React from 'react';
 import './scss/app.scss';
-import Button from './button';
-import Header from './header';
-
-const msg = () => {
-    alert('msg');
-};
+import {Header, Categories} from './components';
 
 function App() {
     return (
         <div className="wrapper">
-            <Header />
-            <Button onClick={msg}>Test</Button>
+            <Header/>
             <div className="content">
                 <div className="container">
                     <div className="content__top">
-                        <div className="categories">
-                            <ul>
-                                <li className="active">Все</li>
-                                <li>Мясные</li>
-                                <li>Вегетарианская</li>
-                                <li>Гриль</li>
-                                <li>Острые</li>
-                                <li>Закрытые</li>
-                            </ul>
-                        </div>
+                        <Categories
+                            items={[
+                                'Мясные',
+                                'Вегетерианские',
+                                'Гриль',
+                                'Острые',
+                                'Закрытые',
+                            ]}
+                        />
                         <div className="sort">
                             <div className="sort__label">
                                 <svg
@@ -94,7 +87,8 @@ function App() {
                                     <i>2</i>
                                 </div>
                             </div>
-                        </div>{' '}
+                        </div>
+                        {' '}
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
@@ -136,7 +130,8 @@ function App() {
                                     <i>2</i>
                                 </div>
                             </div>
-                        </div>{' '}
+                        </div>
+                        {' '}
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
@@ -178,7 +173,8 @@ function App() {
                                     <i>2</i>
                                 </div>
                             </div>
-                        </div>{' '}
+                        </div>
+                        {' '}
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
@@ -220,7 +216,8 @@ function App() {
                                     <i>2</i>
                                 </div>
                             </div>
-                        </div>{' '}
+                        </div>
+                        {' '}
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
@@ -262,7 +259,8 @@ function App() {
                                     <i>2</i>
                                 </div>
                             </div>
-                        </div>{' '}
+                        </div>
+                        {' '}
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
@@ -304,7 +302,8 @@ function App() {
                                     <i>2</i>
                                 </div>
                             </div>
-                        </div>{' '}
+                        </div>
+                        {' '}
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
@@ -346,7 +345,8 @@ function App() {
                                     <i>2</i>
                                 </div>
                             </div>
-                        </div>{' '}
+                        </div>
+                        {' '}
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
@@ -388,7 +388,8 @@ function App() {
                                     <i>2</i>
                                 </div>
                             </div>
-                        </div>{' '}
+                        </div>
+                        {' '}
                         <div className="pizza-block">
                             <img
                                 className="pizza-block__image"
