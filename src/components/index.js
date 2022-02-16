@@ -1,3 +1,4 @@
 export { default as Button } from './button';
-export { default as Header } from './header';
-export { default as Categories } from './categories';
+export { default as Header } from './Header';
+export { default as Categories } from './Categories';
+export { default as SortPopup } from './SortPopup';

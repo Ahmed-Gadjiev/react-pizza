@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/pizza-logo.svg';
 
-const Header = () => {
+function Header() {
     return (
         <div className="header">
             <div className="container">
@@ -51,6 +51,6 @@ const Header = () => {
             </div>
         </div>
     );
-};
+}
 
 export default Header;

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
-function Categories({ items, onClick }) {
+function Categories({ items }) {
     const [activeItem, setActiveItem] = useState(null);
-    // const [inactiveItem, setInactiveItem] = useState(null);
 
     const onSelectItem = (index) => {
         setActiveItem(index);
@@ -20,8 +19,10 @@ function Categories({ items, onClick }) {
                 {items &&
                     items.map((name, index) => (
                         <li
-                            className={activeItem === index ? 'active' : '  '}
-                            onClick={() => {onSelectItem(index)}}
+                            className={activeItem === index ? 'active' : ''}
+                            onClick={() => {
+                                onSelectItem(index);
+                            }}
                             key={Math.random()}
                         >
                             {name}
