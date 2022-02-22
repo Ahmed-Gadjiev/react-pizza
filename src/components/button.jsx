@@ -9,7 +9,7 @@ function Button(props) {
             onClick={onClick}
             className={classNames('button', className, {
                 'button--outline': outline,
-                'button--cart': cart
+                'button--cart': cart,
             })}
         >
             {children}

@@ -4,7 +4,7 @@ function SortPopup({ items }) {
     const [showPopup, setShowPopup] = React.useState(false);
     const [activeItem, setActiveItem] = React.useState(0);
     const [titlePopup, setTitlePopup] = React.useState(null);
-    const activeLable = items[activeItem];
+    const activeLable = items[activeItem].name;
     React.useEffect(() => {
         document.body.addEventListener('click', handleOutsideClick);
     }, []);
@@ -50,13 +50,13 @@ function SortPopup({ items }) {
             {showPopup && (
                 <div className="sort__popup">
                     <ul>
-                        {items.map((name, index) => (
+                        {items.map((obj, index) => (
                             <li
                                 className={activeItem === index ? 'active' : ''}
                                 onClick={() => onSelectItem(index)}
                                 key={Math.random()}
                             >
-                                {name}
+                                {obj.name}
                             </li>
                         ))}
                     </ul>
